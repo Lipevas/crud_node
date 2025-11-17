@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET</title>
+    <link rel="stylesheet" href="usuarios.css">
+</head>
+<body>
+    <h1>Alunos Cadastrados</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Id:</td>
+                <td>Nome:</td>
+                <td>Sobrenome:</td>
+                <td>CPF:</td>
+                <td>Email:</td>
+                <td>Senha:</td>
+                <td>Rua:</td>
+                <td>CEP:</td>
+                <td>Cidade:</td>
+                <td>Estado:</td>
+                <td>Telefone:</td>
+            </tr>
+        </thead>
+        <tbody id="tabela-corpo"></tbody>
+    </table>
+    <hr>
+    <br>
+    <center>
+        <h1>PUT</h1>
+        <label>ID:</label>
+        <input type="text" id="identificador" disabled>
+        
+        <label>CPF:</label>
+        <input type="text" id="identificadorCPF">
+        
+        <label>Nome:</label>
+        <input type="text" id="nomeAtualizar">
+        
+        <label>Sobrenome:</label>
+        <input type="text" id="sobrenomeAtualizar">
+        
+        <label>Email:</label>
+        <input type="text" id="emailAtualizar">
+        
+        <label>Senha:</label>
+        <input type="text" id="senhaAtualizar">
+        
+        <label>Rua:</label>
+        <input type="text" id="ruaAtualizar">
+        
+        <label>CEP:</label>
+        <input type="number" id="cepAtualizar">
+       
+        <label>Cidade:</label>
+        <input type="text" id="cidadeAtualizar">
+        
+        <label>Estado:</label>
+        <input type="text" id="estadoAtualizar">
+        
+        <label>Telefone:</label>
+        <input type="number" id="telefoneAtualizar">
+        
+        <div id="funcoes">
+        <button onclick="buscarDados()">Buscar</button>
+        <button onclick="atualizarDados()">Atualizar</button> 
+        </div>     
+    </center>
+    <br><br>
+    <hr>
+    <center>
+    <h1>Delete</h1>
+    <label>CPF:</label>
+    <input type="text" id="identificadorCPF">
+    <input type="button" onclick="deletarDados()" value="Deletar">
+    </center>
+    <br>
+    <footer>
+        <p>© 2025 Void Cursos</p>
+    </footer>
+
+
+    <script src="usuarios.js"></script>
+
+    
+
+
+</body>
+</html>

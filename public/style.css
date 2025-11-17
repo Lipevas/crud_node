@@ -1,0 +1,161 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Permite o footer ficar no rodapé */
+html, body {
+    height: 100%;
+}
+
+/* ===== Fundo ===== */
+body {
+    background: #f3f3f3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0; /* importante para não empurrar footer */
+}
+
+/* ===== Header ===== */
+header {
+    width: 100%;
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* ===== Conteúdo wrapper ===== */
+#conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+    padding-top: 100px; /* espaço do header */
+    flex: 1; /* empurra footer */
+}
+
+/* ===== Container central ===== */
+.container {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* ===== Box de login ===== */
+.login-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Título */
+.login-box h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Labels */
+.login-box label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+/* Inputs */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #e77600;
+    box-shadow: 0 0 4px rgba(228,121,17,0.4);
+}
+
+/* Botão */
+.btn-login {
+    width: 100%;
+    background: #f0c14b;
+    border: 1px solid #a88734;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background: #eeb933;
+}
+
+/* Criar conta */
+.criar {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.criar a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.criar a:hover {
+    text-decoration: underline;
+}
+
+/* Área ADM */
+.adm {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.adm a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.adm a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    width: 100%;
+    background-color: #131a22;
+    color: #ddd;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+
+    margin-top: auto;
+}
